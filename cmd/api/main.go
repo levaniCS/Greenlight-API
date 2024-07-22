@@ -18,11 +18,11 @@ import (
 	"greenlight.levanisarishvili.com/internal/mailer"
 )
 
-// Application version number
-const version = "1.0.0"
-
-// Create a buildTime variable to hold the executable binary build time
-var buildTime string
+// App version number & Build time
+var (
+	buildTime string
+	version   string
+)
 
 type config struct {
 	port int
